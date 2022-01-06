@@ -40,6 +40,7 @@ public class MenuInfoDao {
         return new ArrayList<>();
     }
 
+
     public MenuItem getMenuItem(int menuItemId) {
         try (Session session = sessionFactory.openSession()) {
             return session.get(MenuItem.class, menuItemId);
